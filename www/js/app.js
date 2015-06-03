@@ -4,7 +4,7 @@
 // 'starter' is the name of this angular module example (also set in a <body> attribute in index.html)
 // the 2nd parameter is an array of 'requires'
 // 'starter.controllers' is found in controllers.js
-angular.module('starter', ['ionic', 'starter.controllers', 'ngJustGage'])
+angular.module('starter', ['ionic', 'ionic.service.core','starter.controllers', 'ngJustGage'])
 
     .run(function ($ionicPlatform) {
         $ionicPlatform.ready(function () {
@@ -20,7 +20,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'ngJustGage'])
         });
     })
 
-    .config(function ($stateProvider, $urlRouterProvider) {
+    .config(function ($stateProvider, $urlRouterProvider, $ionicAppProvider) {
+
+        $ionicAppProvider.identify({
+            // The App ID (from apps.ionic.io) for the server
+            app_id: '08678e8c',
+            // The public API key all services will use for this app
+            api_key: '5b4c6cc3eab385e9d07d30aa2bf53f6644ca3633c7f13ec', // NOTE!: Paste the real one from the console!
+            // The GCM project ID (project number) from your Google Developer Console (un-comment if used)
+            // gcm_id: 'YOUR_GCM_ID'
+        });
+
         $stateProvider
 
             .state('app', {
