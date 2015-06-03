@@ -1,7 +1,7 @@
 {
-  "name": "hydroapp",
+  "name": "hydrouino",
   "version": "1.0.0",
-  "description": "hydroApp: An Ionic project",
+  "description": "hydrouino: The Hydrouino Dream Garden App",
   "dependencies": {
     "gulp": "^3.5.6",
     "gulp-sass": "^1.3.3",
