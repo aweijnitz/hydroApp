@@ -1,0 +1,64 @@
+<ion-view view-title="Live Data Dashboard">
+    <ion-content>
+        <div class="row">
+            <div class="col">
+                <just-gage id="wl" value="sensorData.waterLevel.data[1]"
+                           options="{
+                                min: 0,
+                                max: 20,
+                                title: 'Water Level (cm)',
+                                levelColors: ['#CE1B21', '#D0532A', '#FFC414', '#85A137'],
+                                levelGradiant: false
+                            }">
+                </just-gage>
+            </div>
+            <div class="col">
+                <just-gage id="ll" value="sensorData.lightLevel.data[1]"
+                           title="Light Level (%)"
+                           options="{
+                                min: 0,
+                                max: 100,
+                                title: 'Light Level (%)',
+                                levelColors: ['#85a137'],
+                                levelGradiant: false
+                            }"></just-gage>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col">
+                <just-gage id="wt" value="sensorData.waterTemp.data[1]" title="Water Temp (C)"
+                           options="{
+                                min: 0,
+                                max: 45,
+                                levelColors: ['#CE1B21', '#D0532A', '#FFC414', '#85A137', '#FFC414','#D0532A', '#CE1B21'],
+                                levelGradiant: false
+                            }"></just-gage>
+            </div>
+            <div class="col">
+                <just-gage id="at" value="sensorData.airTemp.data[1]" title="Air Temp (C)"
+                           options="{
+                                min: 0,
+                                max: 45,
+                                levelColors: ['#CE1B21', '#D0532A', '#FFC414', '#85A137', '#FFC414','#D0532A', '#CE1B21'],
+                                levelGradiant: false
+                            }">
+                </just-gage>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col">
+                <just-gage id="pc" value="sensorData.pumpCurrent.data[1]" min=0 max=800
+                           title="Pump Current (mA)"></just-gage>
+            </div>
+            <div class="col">
+                <just-gage id="ap" value="1013" min=400 max=1500
+                           title="Air Pressure (mBar)"></just-gage>
+            </div>
+        </div>
+        <!-- {{sensorData}} -->
+
+    </ion-content>
+</ion-view>
