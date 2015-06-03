@@ -1,4 +1,4 @@
-#hydroApp - Hydrouino Dream Garden In Your Pocket!
+#Hydrouino Dream Garden In Your Phone
 This is an experimental hybrid app based on [Ionic](http://ionicframework.com/). It's working, but it is unpolished.
 
 ## Develop
