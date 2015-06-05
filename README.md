@@ -14,7 +14,7 @@ the app in the emulator (the ionic CLI command doesn't seem to work).
 ### Deploy
 ```ionic deploy```
 
-
+**Screenshots from Chrome mobile preview**
 
 ![screenshot](docs/screenshot_nexus.png)
 
